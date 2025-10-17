@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+
+
+  <title>اضافة تطبيق</title>
+  <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <title>إضافة تطبيق جديد</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="myFunctions.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>إضافة تطبيق ذكاء اصطناعي</h1>
+  </header>
+
+  <section id="add-app-form">
+    <form id="appForm">
+      <label for="appName">اسم التطبيق (بالإنجليزية بدون فراغات):</label>
+      <input type="text" id="appName" name="appName" required>
+
+      <label for="companyName">اسم الشركة المطورة (بالإنجليزية):</label>
+      <input type="text" id="companyName" name="companyName" required>
+
+      <label for="website">رابط الموقع الإلكتروني:</label>
+      <input type="url" id="website" name="website" required>
+
+      <label for="isFree">هل التطبيق مجاني؟</label>
+      <select id="isFree" name="isFree" required>
+        <option value="">اختر</option>
+        <option value="نعم">نعم</option>
+        <option value="لا">لا</option>
+        <option value="جزئيًا">جزئيًا</option>
+      </select>
+
+      <label for="category">مجال الاستخدام:</label>
+      <select id="category" name="category" required>
+        <option value="">اختر المجال</option>
+        <option value="E-Commerce">E-Commerce</option>
+        <option value="Education">Education</option>
+        <option value="Robotics">Robotics</option>
+        <option value="Art & Design">Art & Design</option>
+        <option value="Healthcare">Healthcare</option>
+      </select>
+
+      <label for="description">وصف مختصر للتطبيق:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <div class="form-buttons">
+        <button type="submit">إرسال</button>
+        <button type="reset">إعادة</button>
+      </div>
+    </form>
+  </section>
+<nav class="navbar">
+    <h2>خيارات التنقل </h2>
+    <ul>
+      <li><a href="home.html">الرئيسية</a></li>
+      <li><a href="AboutUs.html">من نحن</a></li>
+      <li><a href="apps.html">التطبيقات</a></li>
+      <li><a href="add_app.html">إضافة تطبيق</a></li>
+    </ul>
+  </nav>
+  
+  <footer>
+    <p>© 2025 - دليلك للذكاء الاصطناعي</p>
+  </footer>
+</body>
+</html>
